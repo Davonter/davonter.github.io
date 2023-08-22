@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://davonter.github.io</id>
+    <title>个人博客小站</title>
+    <updated>2023-08-22T04:49:28.612Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://davonter.github.io"/>
+    <link rel="self" href="https://davonter.github.io/atom.xml"/>
+    <subtitle>Bug建造师</subtitle>
+    <logo>https://davonter.github.io/images/avatar.png</logo>
+    <icon>https://davonter.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, 个人博客小站</rights>
+    <entry>
+        <title type="html"><![CDATA[tmux简易说明]]></title>
+        <id>https://davonter.github.io/tmux-jian-yi-shuo-ming/</id>
+        <link href="https://davonter.github.io/tmux-jian-yi-shuo-ming/">
+        </link>
+        <updated>2023-08-22T04:29:58.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用github pages + gridea搭建个人博客]]></title>
+        <id>https://davonter.github.io/shi-yong-github-pages-gridea-da-jian-ge-ren-bo-ke/</id>
+        <link href="https://davonter.github.io/shi-yong-github-pages-gridea-da-jian-ge-ren-bo-ke/">
+        </link>
+        <updated>2023-08-02T12:43:33.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://davonter.github.io/hello-gridea/</id>
+        <link href="https://davonter.github.io/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[新建只能访问LUCI的非root用户]]></title>
+        <id>https://davonter.github.io/xin-jian-zhi-neng-fang-wen-luci-de-fei-root-yong-hu/</id>
+        <link href="https://davonter.github.io/xin-jian-zhi-neng-fang-wen-luci-de-fei-root-yong-hu/">
+        </link>
+        <updated>2018-08-03T05:59:50.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OpenWrt/Lede 添加Samba支持]]></title>
+        <id>https://davonter.github.io/openwrtlede-tian-jia-samba-zhi-chi/</id>
+        <link href="https://davonter.github.io/openwrtlede-tian-jia-samba-zhi-chi/">
+        </link>
+        <updated>2018-02-02T04:34:22.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OpenWrt/Lede 添加USB支持]]></title>
+        <id>https://davonter.github.io/openwrtlede-tian-jia-usb-zhi-chi/</id>
+        <link href="https://davonter.github.io/openwrtlede-tian-jia-usb-zhi-chi/">
+        </link>
+        <updated>2018-01-02T04:32:22.000Z</updated>
+        <summary type="html"><![CDATA[<h3 id="usb功能定制">USB功能定制</h3>
+<h4 id="1-添加usb相关支持">1. 添加USB相关支持</h4>
+<pre><code>Kernel modules —&gt; USB Support —&gt; &lt;*&gt; kmod-usb-core.  
+Kernel modules —&gt; USB Support —&gt; &lt;*&gt; kmod-usb-ohci.    
+Kernel modules —&gt; USB Support —&gt; &lt;*&gt; kmod-usb-uhci.    
+Kernel modules —&gt; USB Support —&gt; &lt;*&gt; kmod-usb-storage. #安装usb存储设备驱动  
+Kernel modules —&gt; USB Support —&gt; &lt;*&gt; kmod-usb-storage-extras.  
+Kernel modules —&gt; USB Support —&gt; &lt;*&gt; kmod-usb2.  ##usb2.0
+
+</code></pre>
+<h4 id="2-添加scsi支持">2. 添加SCSI支持</h4>
+<pre><code>Kernel modules —&gt; Block Devices —&gt; &lt;*&gt;kmod-scsi-core
+</code></pre>
+<h4 id="3-添加文件系统支持">3. 添加文件系统支持</h4>
+<pre><code>Kernel modules —&gt; Filesystems —&gt; &lt;*&gt; kmod-fs-ext4 (移动硬盘EXT4格式选择)  
+Kernel modules —&gt; Filesystems —&gt; &lt;*&gt; kmod-fs-vfat(FAT16 / FAT32 格式 选择)  
+Kernel modules —&gt; Filesystems —&gt; &lt;*&gt; kmod-fs-ntfs (NTFS 格式 选择)  
+Kernel modules —&gt; Filesystems —&gt; &lt;*&gt; kmod-fuse  
+</code></pre>
+<h4 id="4-添加utf8编码cp437编码iso8859-1编码">4. 添加UTF8编码,CP437编码，ISO8859-1编码</h4>
+<pre><code>Kernel modules —&gt; Native Language Support —&gt; &lt;*&gt; kmod-nls-cp437  
+Kernel modules —&gt; Native Language Support —&gt; &lt;*&gt; kmod-nls-iso8859-1  
+Kernel modules —&gt; Native Language Support —&gt; &lt;*&gt; kmod-nls-utf8  
+Utilities  ---&gt; disc ---&gt; &lt;*&gt; fdisk.................................... manipulate disk partition table   
+Utilities  ---&gt; &lt;*&gt; usbutils................................... USB devices listing utilities  
+
+</code></pre>
+<h4 id="5-挂载ntfs">5. 挂载NTFS</h4>
+<pre><code>Utilities —&gt; Filesystem —&gt; &lt;*&gt; ntfs-3g  
+</code></pre>
+<blockquote>
+<p>保存退出</p>
+</blockquote>
+<h4 id="6-支持nls-cp936">6. 支持nls-cp936</h4>
+<blockquote>
+<p><strong>make kernel_menuconfig</strong></p>
+</blockquote>
+<pre><code>File systems  ---&gt; &lt;*&gt; Native language support  ---&gt;   
+  &lt;*&gt;   Codepage 437 (United States, Canada)   
+  &lt;*&gt;   Simplified Chinese charset (CP936, GB2312)  
+
+</code></pre>
+<h3 id="硬盘自动挂载">硬盘自动挂载</h3>
+<ol>
+<li>
+<p>在source/package/base-files/files/etc/hotplug.d/block目录下添加脚本40-mount，如果没有直接创建</p>
+</li>
+<li>
+<p>脚本内容如下：</p>
+</li>
+</ol>
+<pre><code>#!/bin/sh
+
+case &quot;$ACTION&quot; in 
+	add)
+		/etc/init.d/samba start
+		for i in $(ls /dev/ | grep 'sd[a-z][1-9]')
+			do
+				mkdir -p /mnt/usbstorage
+				isntfs=`fdisk -l | grep $i | grep NTFS`
+				if [&quot;$isntfs&quot; = &quot;&quot;];then
+					mount  -o iocharset=utf8,rw /dev/$i /mnt/usbstorage
+					if [ &quot;$?&quot; -ne 0 ];then
+						mount -o rw /dev/$i /mnt/usbstorage
+					fi
+				else
+					ntfs-3g  -o iocharset=utf8,rw /dev/$i /mnt/usbstorage
+					if [ &quot;$?&quot; -ne 0 ];then
+						ntfs-3g -o rw /dev/$i /mnt/usbstorage
+					fi
+				fi
+				
+			done 
+		;;
+	remove) 
+		/etc/init.d/samba stop
+		MOUNT=`mount | grep -o '/mnt/usbstorage'`
+
+		for i in $MOUNT
+
+			do
+				umount /mnt/usbstorage
+			done 
+		;;
+esac
+
+</code></pre>
+]]></summary>
+        <content type="html"><![CDATA[<h3 id="usb功能定制">USB功能定制</h3>
+<h4 id="1-添加usb相关支持">1. 添加USB相关支持</h4>
+<pre><code>Kernel modules —&gt; USB Support —&gt; &lt;*&gt; kmod-usb-core.  
+Kernel modules —&gt; USB Support —&gt; &lt;*&gt; kmod-usb-ohci.    
+Kernel modules —&gt; USB Support —&gt; &lt;*&gt; kmod-usb-uhci.    
+Kernel modules —&gt; USB Support —&gt; &lt;*&gt; kmod-usb-storage. #安装usb存储设备驱动  
+Kernel modules —&gt; USB Support —&gt; &lt;*&gt; kmod-usb-storage-extras.  
+Kernel modules —&gt; USB Support —&gt; &lt;*&gt; kmod-usb2.  ##usb2.0
+
+</code></pre>
+<h4 id="2-添加scsi支持">2. 添加SCSI支持</h4>
+<pre><code>Kernel modules —&gt; Block Devices —&gt; &lt;*&gt;kmod-scsi-core
+</code></pre>
+<h4 id="3-添加文件系统支持">3. 添加文件系统支持</h4>
+<pre><code>Kernel modules —&gt; Filesystems —&gt; &lt;*&gt; kmod-fs-ext4 (移动硬盘EXT4格式选择)  
+Kernel modules —&gt; Filesystems —&gt; &lt;*&gt; kmod-fs-vfat(FAT16 / FAT32 格式 选择)  
+Kernel modules —&gt; Filesystems —&gt; &lt;*&gt; kmod-fs-ntfs (NTFS 格式 选择)  
+Kernel modules —&gt; Filesystems —&gt; &lt;*&gt; kmod-fuse  
+</code></pre>
+<h4 id="4-添加utf8编码cp437编码iso8859-1编码">4. 添加UTF8编码,CP437编码，ISO8859-1编码</h4>
+<pre><code>Kernel modules —&gt; Native Language Support —&gt; &lt;*&gt; kmod-nls-cp437  
+Kernel modules —&gt; Native Language Support —&gt; &lt;*&gt; kmod-nls-iso8859-1  
+Kernel modules —&gt; Native Language Support —&gt; &lt;*&gt; kmod-nls-utf8  
+Utilities  ---&gt; disc ---&gt; &lt;*&gt; fdisk.................................... manipulate disk partition table   
+Utilities  ---&gt; &lt;*&gt; usbutils................................... USB devices listing utilities  
+
+</code></pre>
+<h4 id="5-挂载ntfs">5. 挂载NTFS</h4>
+<pre><code>Utilities —&gt; Filesystem —&gt; &lt;*&gt; ntfs-3g  
+</code></pre>
+<blockquote>
+<p>保存退出</p>
+</blockquote>
+<h4 id="6-支持nls-cp936">6. 支持nls-cp936</h4>
+<blockquote>
+<p><strong>make kernel_menuconfig</strong></p>
+</blockquote>
+<pre><code>File systems  ---&gt; &lt;*&gt; Native language support  ---&gt;   
+  &lt;*&gt;   Codepage 437 (United States, Canada)   
+  &lt;*&gt;   Simplified Chinese charset (CP936, GB2312)  
+
+</code></pre>
+<h3 id="硬盘自动挂载">硬盘自动挂载</h3>
+<ol>
+<li>
+<p>在source/package/base-files/files/etc/hotplug.d/block目录下添加脚本40-mount，如果没有直接创建</p>
+</li>
+<li>
+<p>脚本内容如下：</p>
+</li>
+</ol>
+<pre><code>#!/bin/sh
+
+case &quot;$ACTION&quot; in 
+	add)
+		/etc/init.d/samba start
+		for i in $(ls /dev/ | grep 'sd[a-z][1-9]')
+			do
+				mkdir -p /mnt/usbstorage
+				isntfs=`fdisk -l | grep $i | grep NTFS`
+				if [&quot;$isntfs&quot; = &quot;&quot;];then
+					mount  -o iocharset=utf8,rw /dev/$i /mnt/usbstorage
+					if [ &quot;$?&quot; -ne 0 ];then
+						mount -o rw /dev/$i /mnt/usbstorage
+					fi
+				else
+					ntfs-3g  -o iocharset=utf8,rw /dev/$i /mnt/usbstorage
+					if [ &quot;$?&quot; -ne 0 ];then
+						ntfs-3g -o rw /dev/$i /mnt/usbstorage
+					fi
+				fi
+				
+			done 
+		;;
+	remove) 
+		/etc/init.d/samba stop
+		MOUNT=`mount | grep -o '/mnt/usbstorage'`
+
+		for i in $MOUNT
+
+			do
+				umount /mnt/usbstorage
+			done 
+		;;
+esac
+
+</code></pre>
+]]></content>
+    </entry>
+</feed>
